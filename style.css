@@ -1,0 +1,71 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+  color: #20222a;
+  background: #f7f2e9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: radial-gradient(circle at top, #fffdf7, #ece5d8);
+  transition: background 0.4s ease;
+}
+
+.clock {
+  width: min(100%, 620px);
+  padding: clamp(40px, 9vw, 80px) clamp(24px, 8vw, 64px);
+  text-align: center;
+  background: rgb(255 255 255 / 80%);
+  border: 1px solid rgb(255 255 255 / 90%);
+  border-radius: 28px;
+  box-shadow: 0 20px 60px rgb(82 67 45 / 14%);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #947042;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 7vw, 3.5rem);
+}
+
+.current-time {
+  margin: 28px 0 0;
+  color: #6d6a65;
+  font-variant-numeric: tabular-nums;
+}
+
+.message {
+  margin: 20px 0 0;
+  font-size: clamp(1.2rem, 4vw, 1.7rem);
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+body.sleeping {
+  color: #e8ebf8;
+  background: radial-gradient(circle at top, #394568, #141a30);
+}
+
+.sleeping .clock {
+  background: rgb(25 33 61 / 75%);
+  border-color: rgb(184 201 255 / 18%);
+  box-shadow: 0 20px 60px rgb(3 7 21 / 35%);
+}
+
+.sleeping .eyebrow,
+.sleeping .current-time {
+  color: #b9c9f4;
+}
