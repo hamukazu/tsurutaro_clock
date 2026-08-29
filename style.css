@@ -19,8 +19,8 @@ body {
 }
 
 .clock {
-  width: min(100%, 620px);
-  padding: clamp(40px, 9vw, 80px) clamp(24px, 8vw, 64px);
+  width: min(100%, 860px);
+  padding: clamp(40px, 8vw, 80px) clamp(32px, 10vw, 104px);
   text-align: center;
   background: rgb(255 255 255 / 80%);
   border: 1px solid rgb(255 255 255 / 90%);
