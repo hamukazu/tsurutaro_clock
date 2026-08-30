@@ -54,6 +54,10 @@ h1 {
   line-height: 1.7;
 }
 
+#note {
+  font-size: 0.8rem;
+}
+
 body.sleeping {
   color: #e8ebf8;
   background: radial-gradient(circle at top, #394568, #141a30);
