@@ -30,7 +30,12 @@ function updateClock() {
   const elapsedHours = Math.floor(elapsedMinutes / 60);
   const minutes = elapsedMinutes % 60;
 
-  message.textContent = `鶴太郎が起きてから${elapsedHours}時間${minutes}分が経ちました`;
+  const elapsedText =
+    elapsedHours === 0
+      ? `${minutes}分`
+      : `${elapsedHours}時間${minutes}分`;
+
+  message.textContent = `鶴太郎が起きてから${elapsedText}が経ちました`;
   document.body.classList.remove("sleeping");
 }
 
